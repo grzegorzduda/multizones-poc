@@ -1,0 +1,17 @@
+# Next.js build output
+.next
+out
+
+# Static export
+export
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
