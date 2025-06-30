@@ -5,6 +5,9 @@ out
 # Static export
 export
 
+# Deployment
+.wrangler
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
