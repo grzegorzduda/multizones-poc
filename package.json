@@ -3,13 +3,12 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev apps/foo\" \"next dev apps/bar\"",
+    "dev:foo": "next dev apps/foo",
+    "dev:bar": "next dev apps/bar",
     "dev:web": "PORT=4000 next dev apps/web",
     "build": "next build apps/foo && next build apps/bar",
     "build:foo": "next build apps/foo",
-    "postbuild:foo": "mkdir -p apps/foo/out/foo && mv apps/foo/out/_next apps/foo/out/foo/ && mv apps/foo/out/images apps/foo/out/foo/ || true",
     "build:bar": "next build apps/bar",
-    "postbuild:bar": "mkdir -p apps/bar/out/bar && mv apps/bar/out/_next apps/bar/out/bar/ && mv apps/bar/out/images apps/bar/out/bar/ || true",
-    "build:all": "npm run build:foo && npm run postbuild:foo && npm run build:bar && npm run postbuild:bar",
     "lint": "eslint apps/** --ext .ts,.tsx"
   },
   "dependencies": {

@@ -1,13 +1,11 @@
 import Button from './Button';
 
 export default function Hello({
-  zone,
   imageName = 'random.jpg',
 }: {
-  zone: 'foo' | 'bar';
   imageName?: string;
 }) {
-  const imagePath = `/${zone}/images/${imageName}`;
+  const imagePath = `/images/${imageName}`;
 
   return (
     <div>
