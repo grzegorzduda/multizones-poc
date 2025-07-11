@@ -10,3 +10,12 @@ variable "account_id" {
 variable "foo_name" {
   default = "multizones-poc-foo"
 }
+
+variable "foo_production_branch" {
+  type    = string
+  default = "main"
+}
+
+variable "foo_zero_trust_email_domain" {
+  default = "foo.com"
+}
